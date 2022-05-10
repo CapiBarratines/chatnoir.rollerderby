@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Noir Roller Derby - Sumate!</title>
+    <link rel="shortcut icon" href="../recursos/favicon.png">
+    <script src="https://kit.fontawesome.com/17df7829c2.js" crossorigin="anonymous"></script>
+    <link href="../css/estilos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="header__logo animate__animated animate__fadeInUp">
+                <a href="../index.html"><img src="../recursos/logo.png" class="header__imagen"></a>
+            </div>
+            <ul class="header__ul">
+                <li><a href="fotos.html" class="menu">Fotos</a></li>
+                <li><a href="entrenos.html" class="menu">Entrenamientos</a></li>
+                <li><a href="eventos.html" class="menu">Próximos Eventos</a></li>
+                <li><a href="inscripcion.html" class="menu">Sumate</a></li>
+                <li><a href="" class="menu">Tienda</a></li><!--LINK A LA TIENDA EN MERCADOSHOPS, FALTA CREARLA-->
+                <li><a href="../recursos/regla.pdf" target="_blank" class="menu">Reglamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contacto"> 
+            <h1>Sumate al Gato!</h1>
+            <div class="contacto__contenedor">
+                <form>
+                    <div>
+                        <label for="nombre" class="contacto__form__label">Nombre:</label><input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido"/>
+                    </div>
+                    <div>
+                        <label for="email"  class="contacto__form__label">Mail:</label><input id="mail" type="email" name="email" placeholder="nombre@ejemplo.com"/>
+                    </div>
+                    <div>
+                        <label for="tel"  class="contacto__form__label">Telefono:</label><input id="telefono" type="tel" name="tel" placeholder="221-15-1234567"/>
+                    </div>
+                    <div>
+                        <label for="vive"  class="contacto__form__label">Donde vivis?:</label><input id="domicilio" type="text" name="vive" placeholder="en La Plata"/>
+                    </div>
+                    <div>
+                        <div>Experiencia con patines</div>
+                        <div class="contacto__exp">
+                            <input id="experiencia" type="range" value="35" min="0" max="100" autocomplete="off" name="exp" />
+                        </div>
+                    <div>
+                        <div>Contas con equipamiento?</div>
+                            <label for="si"  class="contacto__form__label">Si</label><input id="si" type="checkbox" name="si" value="1" />
+                            <label for="no"  class="contacto__form__label">No</label><input id="no" type="checkbox" name="no" value="1" />
+                    </div>
+                    <nav class="contenedor__botones">
+                        <ul>
+                            <li><input class="boton"  type="reset" value="Limpiar"/></li>
+                            <li><input class="boton"  type="submit" value="Enviar"/></li>
+                        </ul>
+                    </nav>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <ul class="footer__redes">
+                <li><a href="https://www.facebook.com/chat.noir.rd" target="_blank" class="footer__iconos"><i class="fa-brands fa-facebook-square" ></i></a></li>
+                <li><a href="mailto:chatnoir.rd@gmail.com" class="footer__iconos"><i class="fa-solid fa-square-envelope" ></i></a></li>
+                <li><a href="https://www.instagram.com/chatnoir.rd/" target="_blank" class="footer__iconos"><i class="fa-brands fa-instagram-square" ></i></a></li>
+            </ul>
+        </div>
+        <div class="footer__disclaimer">
+            <p>Todos los derechos reservados © 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
