@@ -19,17 +19,6 @@ div{
     display: block;
 }
 
-form{
-    display: block;
-    width: 100%;
-    margin-top: 15px;
-}
-
-input{
-    border: #255778 1px solid;
-    padding: 10px;
-}
-
 .header{
     display: inline;
 }
@@ -177,10 +166,6 @@ textarea{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2vh;
-}
-
-.contenedor__botones{
-    background-color: transparent;
 }
 
 

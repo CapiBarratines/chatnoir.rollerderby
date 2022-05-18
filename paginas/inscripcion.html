@@ -51,35 +51,72 @@
             <h1>Sumate al Gato!</h1>
             <div class="contacto__contenedor">
                 <form>
-                    <div>
-                        <label for="nombre" class="contacto__form__label">Nombre:</label><input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido"/>
+                    <div class="row mb-3">
+                        <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+                            <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail3" id="nombre"  placeholder="Nombre y Apellido">
+                            </div>
                     </div>
-                    <div>
-                        <label for="email"  class="contacto__form__label">Mail:</label><input id="mail" type="email" name="email" placeholder="nombre@ejemplo.com"/>
+                    <div class="row mb-3">
+                        <label for="mail" class="col-sm-2 col-form-label">Mail</label>
+                            <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail3" id="mail"  placeholder="ejemplo@gmail.com">
+                            </div>
                     </div>
-                    <div>
-                        <label for="tel"  class="contacto__form__label">Telefono:</label><input id="telefono" type="tel" name="tel" placeholder="221-15-1234567"/>
+                    <div class="row mb-3">
+                        <label for="tel" class="col-sm-2 col-form-label">Teléfono</label>
+                            <div class="col-sm-10">
+                        <input type="tel" class="form-control" id="inputEmail3" id="tel"  placeholder="221-15-1234567">
+                            </div>
                     </div>
-                    <div>
-                        <label for="vive"  class="contacto__form__label">Donde vivis?:</label><input id="domicilio" type="text" name="vive" placeholder="en La Plata"/>
+                    <div class="row mb-3">
+                        <label for="domicilio" class="col-sm-2 col-form-label">Donde vivís?</label>
+                            <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail3" id="domicilio"  placeholder="en La Plata">
+                            </div>
                     </div>
-                    <div>
-                        <div>Experiencia con patines</div>
-                        <div class="contacto__exp">
-                            <input id="experiencia" type="range" value="35" min="0" max="100" autocomplete="off" name="exp" />
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Contas con equipamiento?</legend>
+                        <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="si" value="option1" checked="">
+                            <label class="form-check-label" for="si">
+                            Si
+                            </label>
                         </div>
-                    <div>
-                        <div>Contas con equipamiento?</div>
-                            <label for="si"  class="contacto__form__label">Si</label><input id="si" type="checkbox" name="si" value="1" />
-                            <label for="no"  class="contacto__form__label">No</label><input id="no" type="checkbox" name="no" value="1" />
-                    </div>
-                    <nav class="contenedor__botones">
-                        <ul>
-                            <li><input class="boton"  type="reset" value="Limpiar"/></li>
-                            <li><input class="boton"  type="submit" value="Enviar"/></li>
-                        </ul>
-                    </nav>
-                </form>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="no" value="option2">
+                            <label class="form-check-label" for="no">
+                            No
+                            </label>
+                        </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Tenés experiencia en patines?</legend>
+                        <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="mucha" value="option1" checked="">
+                            <label class="form-check-label" for="mucha">
+                            Mucha
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="poca" value="option2">
+                            <label class="form-check-label" for="poca">
+                            Poca
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="nada" value="option2">
+                            <label class="form-check-label" for="nada">
+                            Ninguna
+                            </label>
+                        </div>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
             </div>
         </section>
     </main>
