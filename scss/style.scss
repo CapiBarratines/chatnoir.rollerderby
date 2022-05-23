@@ -1,3 +1,4 @@
+@import 'variables';
 *{
     margin: 0px;
     padding: 0px;
@@ -5,7 +6,7 @@
 
 body{
     margin: 50px;
-    background-color: black;
+    background-color: $color-principal;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -46,42 +47,43 @@ ul{
     display: block;
 }
 
-
-.header__logo{
-    flex-grow: 1;
+.header{
+    &__logo{
+        flex-grow: 1;
+    }
+    &__imagen{
+        width: auto;
+        height: 70px;
+        margin: 0rem;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    &__imagen:hover{
+        transform: scale(1.5);
+    }
 }
 
-.header__imagen{
-    width: auto;
-    height: 70px;
-    margin: 0rem;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+.footer{
+    &__iconos{
+        font-size: 4rem;
+        color: $color-secundario;
+        text-align: center;
+    }
+    &__redes{
+        text-align: center;
+    }
+    &__disclaimer{
+        text-align: center;
+    }
 }
 
-.header__imagen:hover{
-    transform: scale(1.5);
-}
-
-.footer__iconos{
-    font-size: 4rem;
-    color: yellow;
-    text-align: center;
-}
 
 footer{
     color:white
 }
 
-.footer__redes{
-    text-align: center;
-
-}
-
-.footer__disclaimer{
-    text-align: center;
-}
 
 h1{
     color: white;
@@ -99,19 +101,13 @@ h2{
     margin-top: 0px;
 }
 
-.main__video{
-    text-align: center;
-}
-
-.contacto__contenedor{   
-    display: grid;
-}
-
-
-
-.contacto__form__label{
-    width: 100%;
-    margin: 1.5rem;
+.main{
+    &__video{
+        text-align: center;
+    }
+    &__logo{
+        display: none;
+    }
 }
 
 
@@ -120,18 +116,24 @@ h2{
     padding-right: 8rem;
     padding-top: 0px;
     padding-bottom: 0px;
-}
-
-.entrenos__fechas{
-    display: block;
-    margin: 2rem;
-    font-family: menus;
-    font-weight: thin;
+    &__form__label{
+        width: 100%;
+        margin: 1.5rem;
+    }
+    &__contenedor{   
+        display: grid;
+    }
 }
 
 .entrenos{
     width: 100%;
     text-align: center;
+    &__fechas{
+        display: block;
+        margin: 2rem;
+        font-family: menus;
+        font-weight: thin;
+    }
 }
 
 .eventos__calendar{
@@ -139,7 +141,7 @@ h2{
 }
 
 .boton{
-    background-color: yellow;
+    background-color: $color-secundario;
     color: black;
     border-radius: 20px;
     font-weight: bold;
@@ -161,22 +163,16 @@ textarea{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2vh;
+    &__foto{
+        display: grid;
+        background-size: cover;
+    }
+    &__foto a{
+        padding: 10rem;
+    }
+    
 }
 
-
-.galeria__foto{
-    display: grid;
-    background-size: cover;
-}
-
-.galeria__foto a{
-    padding: 10rem;
-}
-
-
-.main__logo{
-    display: none;
-}
 
 /*GALERIA DE FOTOS*/
 /*GALERIA DE FOTOS*/
@@ -249,12 +245,13 @@ textarea{
         font-size: 35px;
     }
     
-    .main__video{
+    .main {
+        &__video{
         display: none;
-    }
-    
-    .main__logo{
-        display: block;
+        }
+        &__logo{
+            display: block;
+        }
     }
     
     .index__imagen{
