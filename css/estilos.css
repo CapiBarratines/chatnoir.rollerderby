@@ -33,28 +33,19 @@ li{
 
 nav{
     display: flex;
-    align-items: center;
-    background-color: yellow;
     border-radius: 50px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
 }
 
-.menu{
-    text-decoration: none;
-    padding: 15px;
-    color: black;
+.nav-link:visited{
+    color: blue;
 }
 
 ul{
     display: block;
 }
 
-.header__ul{
-    display: flex;
-    padding: 0px;
-
-}
 
 .header__logo{
     flex-grow: 1;
@@ -63,14 +54,18 @@ ul{
 .header__imagen{
     width: auto;
     height: 70px;
-    margin: 0px;
+    margin: 0rem;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.header__imagen:hover{
+    transform: scale(1.5);
 }
 
 .footer__iconos{
-    font-size: 50px;
+    font-size: 4rem;
     color: yellow;
     text-align: center;
 }
@@ -92,7 +87,7 @@ h1{
     color: white;
     font-family: titulo, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    font-size: 150px;
+    font-size: 10rem;
 
 }
 
@@ -100,7 +95,7 @@ h2{
     color: white;
     font-family: titulo, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 5rem;
     margin-top: 0px;
 }
 
@@ -116,20 +111,20 @@ h2{
 
 .contacto__form__label{
     width: 100%;
-    margin: 15px;
+    margin: 1.5rem;
 }
 
 
 .contacto{
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 8rem;
+    padding-right: 8rem;
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
 .entrenos__fechas{
     display: block;
-    margin: 20px;
+    margin: 2rem;
     font-family: menus;
     font-weight: thin;
 }
@@ -140,7 +135,7 @@ h2{
 }
 
 .eventos__calendar{
-    margin-top: 50px;
+    margin-top: 5rem;
 }
 
 .boton{
@@ -153,12 +148,12 @@ h2{
 
 input{
     width: 100%;
-    margin: 15px;
+    margin: 2rem;
 }
 
 textarea{
     width: 100%;
-    margin: 15px;
+    margin: 2rem;
 }
 
 .galeria{
@@ -171,13 +166,17 @@ textarea{
 
 .galeria__foto{
     display: grid;
-    width: 20vw;
-    height: 19vh;
-    padding: 90px;
     background-size: cover;
 }
 
+.galeria__foto a{
+    padding: 10rem;
+}
 
+
+.main__logo{
+    display: none;
+}
 
 /*GALERIA DE FOTOS*/
 /*GALERIA DE FOTOS*/
@@ -233,7 +232,7 @@ textarea{
 /*CELULAR*/
 /*CELULAR*/
 /*CELULAR*/
-@media (min-width: 320px) and (max-width:540px) {
+@media screen and  (min-width: 320px) and (max-width:540px) {
     .header__ul{
         display: block;
     }
@@ -254,6 +253,14 @@ textarea{
         display: none;
     }
     
+    .main__logo{
+        display: block;
+    }
+    
+    .index__imagen{
+        width: 100%;
+    }
+
     .footer {
         margin-top: 100px;
     }
@@ -285,7 +292,7 @@ textarea{
 /*TABLET*/
 /*TABLET*/
 /*TABLET*/
-@media (min-width: 541px) and (max-width: 820px) {
+@media screen and  (min-width: 541px) and (max-width: 820px) {
     .galeria{
         display: grid;
         grid-template-columns: 1fr 1fr;
