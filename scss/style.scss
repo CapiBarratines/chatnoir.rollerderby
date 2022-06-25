@@ -76,6 +76,7 @@ ul{
     }
     &__disclaimer{
         text-align: center;
+        color: rgb(75, 75, 75);
     }
 }
 
@@ -108,8 +109,11 @@ h2{
     &__logo{
         display: none;
     }
+    &__texto{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }
-
 
 .contacto{
     padding-left: 8rem;
@@ -136,8 +140,10 @@ h2{
     }
 }
 
-.eventos__calendar{
-    margin-top: 5rem;
+.eventos{
+    &__calendar{
+        margin-top: 5rem;
+    }
 }
 
 .boton{
@@ -184,23 +190,63 @@ textarea{
 /*GALERIA DE FOTOS*/
 /*GALERIA DE FOTOS*/
 .uno{
-    background-image: url(../recursos/galeria/1.JPG);
+    background-image: url(../recursos/galeria/01.JPG);
 }
 
 .dos{
-    background-image: url(../recursos/galeria/2.JPG);
+    background-image: url(../recursos/galeria/02.JPG);
 }
 
 .tres{
-    background-image: url(../recursos/galeria/3.JPG);
+    background-image: url(../recursos/galeria/03.JPG);
 }
 
 .cuatro{
-    background-image: url(../recursos/galeria/4.JPG);
+    background-image: url(../recursos/galeria/04.JPG);
 }
 
 .cinco{
-    background-image: url(../recursos/galeria/5.JPG);
+    background-image: url(../recursos/galeria/05.JPG);
+}
+
+.seis{
+    background-image: url(../recursos/galeria/06.JPG);
+}
+
+.siete{
+    background-image: url(../recursos/galeria/07.JPG);
+}
+
+.ocho{
+    background-image: url(../recursos/galeria/08.JPG);
+}
+
+.nueve{
+    background-image: url(../recursos/galeria/09.JPG);
+}
+
+.diez{
+    background-image: url(../recursos/galeria/10.JPG);
+}
+
+.once{
+    background-image: url(../recursos/galeria/11.JPG);
+}
+
+.doce{
+    background-image: url(../recursos/galeria/12.JPG);
+}
+
+.trece{
+    background-image: url(../recursos/galeria/13.JPG);
+}
+
+.catorce{
+    background-image: url(../recursos/galeria/14.JPG);
+}
+
+.quince{
+    background-image: url(../recursos/galeria/15.JPG);
 }
 /*GALERIA DE FOTOS*/
 /*GALERIA DE FOTOS*/
